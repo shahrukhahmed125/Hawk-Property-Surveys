@@ -1,0 +1,6 @@
+{
+  "name": "Hawk Property Surveys",
+  "description": "Independent RICS & PCA accredited property surveying consultancy delivering comprehensive residential and commercial surveys across the UK.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

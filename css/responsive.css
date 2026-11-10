@@ -1,0 +1,241 @@
+/* ==========================================================================
+   HAWK PROPERTY SURVEYS - RESPONSIVE STYLESHEET
+   Breakpoints: 1200px, 1024px, 768px, 480px, 360px
+   ========================================================================== */
+
+/* Large screens (>= 1440px) */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1360px;
+  }
+}
+
+/* Medium Desktop & Tablet Landscape (<= 1199px) */
+@media (max-width: 1199px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trust-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .trust-item:nth-child(3) {
+    border-right: none;
+  }
+
+  .trust-item:nth-child(4),
+  .trust-item:nth-child(5) {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-timeline {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+  }
+
+  .process-timeline::before {
+    display: none;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2.5rem;
+  }
+}
+
+/* Tablet Portrait (<= 991px) */
+@media (max-width: 991px) {
+  .section {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .top-bar {
+    display: none;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .floating-stat-box {
+    position: static;
+    margin-top: 1.5rem;
+    max-width: 100%;
+  }
+
+  .coverage-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .reports-preview-grid,
+  .guides-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .enquiry-wrapper {
+    padding: 2.5rem 1.75rem;
+  }
+}
+
+/* Mobile Devices (<= 767px) */
+@media (max-width: 767px) {
+  .section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 4.5rem 0 3.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .hero-text {
+    font-size: 1.0625rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.875rem;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .trust-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .trust-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.875rem 0.5rem;
+  }
+
+  .trust-item::after {
+    display: none;
+  }
+
+  .trust-item:last-child {
+    border-bottom: none;
+  }
+
+  .services-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-timeline {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .reports-preview-grid,
+  .guides-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .coverage-regions-list {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .footer-legal-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .intro-features {
+    grid-template-columns: 1fr;
+  }
+
+  .header-cta .btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.75rem;
+  }
+
+  .brand-name {
+    font-size: 1.0625rem;
+  }
+
+  .brand-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Small Mobile (<= 400px) */
+@media (max-width: 400px) {
+  .hero-title {
+    font-size: 1.875rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .header-cta .btn {
+    display: none;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
